@@ -8,6 +8,9 @@ You must have a driver with OpenGL 4.6 support.
 
 Building this requires CMake, GLFW, and GLEW.
 
+GLFW - sudo apt-get install libglfw3
+GLEW - http://glew.sourceforge.net/install.html (Default install is fine)
+
 To compile, from the project root, run
 
 ```
