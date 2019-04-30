@@ -29,7 +29,9 @@ source setup-env.sh
 
 Then just run ./main in bin.
 
-As noted in source, you will need to modify the .glsl files to force a shader recompile. A comment is sufficient for this.
+As noted in source, you will need to modify the .glsl files to force a shader recompile. 
+A comment is sufficient for this. After running, it is suggested to try the 'big' shaders.
+This will let you see the application halt with GL_COMPLETION_STATUS_KHR for shaders. 
 
 ## Sample Output
 
@@ -50,3 +52,6 @@ Program still linking!
 Program is linked!
 Program is linked!
 ```
+
+With 'big' shaders my app halts for 3~5 minutes for each big shader on a i7 7700k.
+I haven't gotten it to complete linking with 'big' shaders yet.
