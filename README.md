@@ -30,8 +30,13 @@ source setup-env.sh
 Then just run ./main in bin.
 
 As noted in source, you will need to modify the .glsl files to force a shader recompile. 
-A comment is sufficient for this. After running, it is suggested to try the 'big' shaders.
-This will let you see the application halt with GL_COMPLETION_STATUS_KHR for shaders. 
+A comment is sufficient for this. 
+
+After running, it is suggested to try the 'big' shaders.
+This shows the application halt with GL_COMPLETION_STATUS_KHR for shaders. 
+Note: halting occurs with the trivial shaders as well, as indicated by:
+"Error: Shader compilation finished immediately!" The 'big' shaders just
+make complilation take long enough for the delay to be humanly-percieved.
 
 ## Sample Output
 
