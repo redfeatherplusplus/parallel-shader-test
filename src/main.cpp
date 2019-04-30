@@ -71,9 +71,9 @@ int main(int argc, char *argv[])
     shader_list_t tri_shader_list;
     shader_list_t tri2_shader_list;
     tri_shader_list.push_back({"../src/shaders/tri-vert.glsl", GL_VERTEX_SHADER});
-    tri_shader_list.push_back({"../src/shaders/tri-frag-big.glsl", GL_FRAGMENT_SHADER}); // tri-frag-big.glsl
+    tri_shader_list.push_back({"../src/shaders/tri-frag.glsl", GL_FRAGMENT_SHADER}); // tri-frag-big.glsl
     tri2_shader_list.push_back({"../src/shaders/tri2-vert.glsl", GL_VERTEX_SHADER});
-    tri2_shader_list.push_back({"../src/shaders/tri2-frag-big.glsl", GL_FRAGMENT_SHADER}); // tri2-frag-big.glsl
+    tri2_shader_list.push_back({"../src/shaders/tri2-frag.glsl", GL_FRAGMENT_SHADER}); // tri2-frag-big.glsl
 
     // The default of -1 uses max threads.
     // From testing in other programs this does indeed spawn multiple threads.
