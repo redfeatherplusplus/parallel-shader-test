@@ -1,3 +1,0 @@
-/home/cheng/Downloads/repos/GL_parallel_shader/build/CMakeFiles/rebuild_cache.dir
-/home/cheng/Downloads/repos/GL_parallel_shader/build/CMakeFiles/main.dir
-/home/cheng/Downloads/repos/GL_parallel_shader/build/CMakeFiles/edit_cache.dir
