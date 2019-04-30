@@ -20,3 +20,5 @@ make
 The binaries will be put in a bin directory in the project root.
 To execute on linux, first source setup-env.sh to add libGLEW to your path. 
 Then just run ./main in bin.
+
+As noted in source, you will need to modify the .glsl files to force a shader recompile. A comment is sufficient for this.
