@@ -18,5 +18,5 @@ make
 ```
 
 The binaries will be put in a bin directory in the project root.
-To execute on linux, first source setup-env.sh to add libGLEW to your path.
-
+To execute on linux, first source setup-env.sh to add libGLEW to your path. 
+Then just run ./main in bin.
