@@ -75,12 +75,13 @@ int main(int argc, char *argv[])
 	tri2_shader_list.push_back({"../src/shaders/tri2-vert.glsl", GL_VERTEX_SHADER});
 	tri2_shader_list.push_back({"../src/shaders/tri2-frag.glsl", GL_FRAGMENT_SHADER});
 
+	// The default of -1 uses max threads.
+	// From testing in other programs this does indeed spawn multiple threads.
+	// However, if this is not set to -1 no parallel compilation occurs.
+	glMaxShaderCompilerThreadsKHR(-1);
+
     auto load_shaders = [](shader_list_t shader_list, GLuint program)
     {
-		// The default of -1 uses max threads.
-		// From testing in other programs this does indeed spawn multiple threads.
-        glMaxShaderCompilerThreadsKHR(-1);
-
 		std::vector<const GLchar *> sources;
 		std::vector<GLuint> shaders;
         for( auto shader : shader_list )
